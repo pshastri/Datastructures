@@ -54,8 +54,12 @@ class myList:
 		return count
 	def list_print(self):
 		current=self.head
-		if current!=None:
-			print current.get_data()
+		while current!=None:
+			print current.get_data(),
 			current=current.get_next()
-		else:
-			print "no data"
+	def list_append(self,item):
+		tmp=Node(item)
+		tmp.set_next(None)
+		self.head=tmp
+		
+		
