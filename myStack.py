@@ -3,8 +3,11 @@ import sys
 class myStack():
 	def __init__(self):
 		self.stack=[]
+		
 	def stack_empty(self):
 		return self.stack==[]
+	def stack_print(self):
+		return self.stack
 	def stack_push(self,item):
 		self.stack.append(item)
 	def stack_pop(self):
